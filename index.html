@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <header class="menu-banner">
+    <div class="banner">
+      <h2>Alex's Dinner</h2>
+      <h3>The best burgers and pizzas in town.</h3>
+    </div>
+  </header>
+  <body>
+    <div class="menu" id="menu"></div>
+    <div class="cart">
+      <h3>Your order</h3>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-total" id="cart-total">
+        <p>Total:</p>
+        <p class="cart-total-price" id="cart-total-price">
+          £<span class="cart-total-amount" id="cart-total-amount">0.00</span>
+        </p>
+      </div>
+      <button class="complete-order-btn" id="complete-order-btn">
+        Complete Order
+      </button>
+    </div>
+    <div>
+      <form class="payment-popup" id="payment-popup">
+        <h2 class="payment-popup-header">Enter card details</h2>
+        <input class="payment-input" placeholder="Enter your name" required />
+        <input class="payment-input" placeholder="Enter card number" required />
+        <input class="payment-input" placeholder="Enter CVV" required />
+        <button class="pay-btn" onclick="submitForm()">Pay</button>
+      </form>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
